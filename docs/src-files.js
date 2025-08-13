@@ -1,0 +1,2 @@
+createSrcSidebar('[["snake_bevy_wasm_pwa",["",[["main_mod",[["lib_mod",[["web_sys_mod",[],["html_source_code_mod.rs"]]],["hello_mod.rs","web_sys_mod.rs"]]],["lib_mod.rs"]]],["lib.rs","main_mod.rs"]]]]');
+//{"start":19,"fragment_lengths":[180]}

@@ -1,0 +1,56 @@
+[package]
+name = "snake_bevy_wasm_pwa"
+# binary executable does not need to be SemVer, because nobody depends on it
+version = "0.0.12"
+authors = ["bestia.dev"]
+homepage = "https://bestia.dev"
+edition = "2021"
+description = "Template for a minimal pwa wasm project for browser"
+repository = "https://github.com/bestia-dev/snake_bevy_wasm_pwa"
+readme = "README.md"
+license = "MIT"
+# Keyword must be only one word: lowercase letters, hyphens(-) or numbers, less then 35 characters, at most 5 keywords per crate
+keywords = ["maintained", "work-in-progress", "rustlang", "wasm"]
+categories = ["wasm"]
+publish = false
+
+[lib]
+# cdylib is for the wasm module library
+crate-type = ["cdylib"]
+
+[dependencies]
+# SemVer rules: Major version zero (0.y.z) is for initial development. Anything MAY change at any time. The public API SHOULD NOT be considered stable.
+# WARNING: Although dependecies in Cargo.toml look like a specific version of the crate, they are just like a carret version (^x.y.z) and actually specify 
+# the minimum version and allow automatic SemVer compatible updates up to a MAJOR increment! Always check the true version with `cargo tree`!
+
+# the macro unwrap is great for WASM, because it shows the correct file and line number of the error
+unwrap = "1.2.1"
+wasm-bindgen = { version = "0.2.86", features = ["serde-serialize"] }
+console_error_panic_hook = "0.1.7"
+js-sys = "0.3.63"
+thiserror="1.0.40"
+anyhow="1.0.71"
+log = "0.4.17"
+wasm-logger = "0.2.0"
+wasm-rs-dbg = {version="0.1.2", default-features = false, features = ["console-log"]}
+html-escape = "0.2.13"
+
+[dependencies.web-sys]
+version = "0.3.63"
+features = [
+  "AbortController",
+  "console",
+  "Document",
+  "Element",
+  "ErrorEvent",
+  "HtmlElement",
+  "HtmlInputElement",
+  "Location",
+  "Window",
+]
+
+# [dev-dependencies]
+# wasm-bindgen-test = "0.3.36"
+
+[profile.release]
+panic = "abort"

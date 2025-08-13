@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["get_args_from_hash_fragment","header","main","on_click_btn_run","on_hash_change","page_with_inputs","print_greet_name","print_help","routing_by_arguments","upper_greet_name"],"mod":["lib_mod"]};

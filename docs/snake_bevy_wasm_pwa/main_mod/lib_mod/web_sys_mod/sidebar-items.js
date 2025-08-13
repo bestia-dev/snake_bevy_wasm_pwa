@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["add_listener_for_onhashchange","add_listener_to_button","get_element_by_id","get_html_element_by_id","get_input_element_value_string_by_id","now_time_as_string","open_url","set_html_element_inner_text","window"],"mod":["html_source_code_mod"]};
