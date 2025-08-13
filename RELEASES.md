@@ -10,13 +10,9 @@ The TODO section is part of the [README.md](https://github.com/automation-tasks-
 
 ## Unreleased
 
-## Version 0.0.9 (2025-07-15)
+## Version 0.0.12 (2025-08-13)
 
-- update auto
-
-## Version 0.0.8 (2025-03-18)
-
-- update auto
+- init 
 
 ## Version 0.0.1
 
